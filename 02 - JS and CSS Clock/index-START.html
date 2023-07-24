@@ -84,9 +84,9 @@
       const secondsDegrees = ((seconds / 60) * 360) + 90;
       secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
       if (secondHand.style.transform === "rotate(444deg)"){
-        secondHand.style.transition = "none"
+        secondHand.style.removeProperty("transition")
       }
-      if (secondHand.style.transform === "rotate(90deg)"){
+      if (secondHand.style.transform === "rotate(96deg)"){
         secondHand.style.transition = "all 0.05s"
       }
 
